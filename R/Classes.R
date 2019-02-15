@@ -222,7 +222,7 @@ TCA <- function(design, counts = matrix(0L, 0L, 0L), genomicFeature,
     }
     genomicFeature <- as(genomicFeature, "data.frame")
     if (zero.based) {
-      enomicFeature$start <- genomicFeature$start - 1
+     genomicFeature$start <- genomicFeature$start - 1
     }
   }
   if (!identical(matrix(0L, 0L, 0L), counts)) {
